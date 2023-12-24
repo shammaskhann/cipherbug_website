@@ -44,7 +44,17 @@ h1 {
   line-height: 1.5;
 }
 h2 {
-  font-weight: 400;
+  font-weight: bolder;
+  font-family: 'Orbitron', sans-serif;
+   /* Create a background gradient */
+ background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+ /* Use the background as the text color */
+ -webkit-background-clip: text;
+ background-clip: text;
+ /* Make the text transparent so the background shows through */
+ color: transparent;
+ /* Transition for smooth color change */
+ transition: background 0.5s ease-in-out;
 }
 .sample-section-wrap {
   position: relative;
@@ -57,3 +67,98 @@ h2 {
   margin-right: auto;
   padding: 40px;
 }
+
+/* nav bar */
+/* nav bar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* This will push the logo and the nav items to the ends of the navbar */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
+  position: fixed; /* Make the navbar fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}
+
+.navbar .logo {
+  padding: 14px 16px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+   /* Create a background gradient */
+ background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+ /* Use the background as the text color */
+ -webkit-background-clip: text;
+ background-clip: text;
+ /* Make the text transparent so the background shows through */
+ color: transparent;
+ /* Transition for smooth color change */
+ transition: background 0.5s ease-in-out;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color: #ddd; /* Change color on hover */
+}
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar li a {
+    padding: 20px 0; /* Increase padding */
+  }
+  .navbar .logo {
+    display: block;
+    font-size: 20px; /* Reduce size */
+    text-align: center;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bolder;
+  /* Create a background gradient */
+ background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  /* Use the background as the text color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the text transparent so the background shows through */
+  color: transparent;
+  /* Transition for smooth color change */
+  transition: background 0.5s ease-in-out;
+}
+
